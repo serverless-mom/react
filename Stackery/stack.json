@@ -1,97 +1,15 @@
 {
   "nodes": [
     {
-      "id": "cd8914e9",
-      "type": "function",
-      "name": "Hello!",
-      "outputs": 1,
-      "memorySize": 128,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "noerr": true,
-      "x": 400,
-      "y": 185,
-      "wires": [
-        []
-      ]
-    },
-    {
-      "id": "3d785ac1",
-      "type": "function",
-      "name": "Echo",
-      "outputs": 1,
-      "memorySize": 128,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "noerr": true,
-      "x": 400,
-      "y": 285,
-      "wires": [
-        []
-      ]
-    },
-    {
-      "id": "96b631b2",
-      "type": "http",
-      "x": 197.5,
-      "y": 235,
-      "width": 185,
-      "height": 260
-    },
-    {
-      "id": "6bf203e4",
-      "type": "restApiEndpoint",
-      "x": 185,
-      "y": 185,
+      "id": "f9c7d55c",
+      "type": "objectStore",
+      "x": 415,
+      "y": 180,
+      "width": 100,
+      "height": 30,
       "name": "",
-      "path": "/",
-      "method": "GET",
-      "wires": [
-        [
-          "cd8914e9"
-        ]
-      ]
-    },
-    {
-      "id": "b5672e63",
-      "type": "restApiEndpoint",
-      "x": 195,
-      "y": 285,
-      "name": "",
-      "path": "/{message}",
-      "method": "GET",
-      "wires": [
-        [
-          "3d785ac1"
-        ]
-      ]
-    },
-    {
-      "id": "8381bda",
-      "type": "errors",
-      "x": 200,
-      "y": 400,
-      "wires": [
-        [
-          "63567e4b"
-        ]
-      ]
-    },
-    {
-      "id": "63567e4b",
-      "type": "function",
-      "x": 410,
-      "y": 400,
-      "name": "LogErrors",
-      "outputs": 1,
-      "memorySize": 3008,
-      "timeout": 30,
-      "runtime": "nodejs",
-      "location": "inline",
-      "envVars": {},
-      "entryPoint": "",
+      "publicPermissions": "none",
+      "websiteHosting": true,
       "wires": [
         []
       ]
